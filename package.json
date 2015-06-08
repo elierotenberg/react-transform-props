@@ -1,15 +1,15 @@
 {
-  "name": "es6-starterkit",
+  "name": "react-transform-props",
   "version": "0.0.0",
   "description": "",
-  "homepage": "https://github.com/elierotenberg/es6-starterkit",
-  "bugs": "https://github.com/elierotenberg/es6-starterkit/issues",
+  "homepage": "https://github.com/elierotenberg/react-transform-props",
+  "bugs": "https://github.com/elierotenberg/react-transform-props/issues",
   "license": "MIT",
   "author": "Elie Rotenberg <elie@rotenberg.io>",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/elierotenberg/es6-starterkit.git"
+    "url": "https://github.com/elierotenberg/react-transform-props.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,28 +1,25 @@
-ES6 Starterkit
-==============
+React Transform Props
+=====================
 
-The future is today!
+Transform the input props of a React.Component using a higher-order component decorator.
 
-#### Usage
+### Example
 
-1. Fork or clone this repository.
-2. (Optional) Edit `package.json` if you intent to publish your package on `npm`.
-3. `npm install` to install all the required dependencies from `npm`.
-4. Hack `src/index.js`.
-5. Build/rebuild using `gulp`.
-6. Don't forget to edit this `README.md` file.
+```js
+@transform(({ props }) => _(props)
+  // filter out properties which key start with '_'
+  .filter((v, k) => !k.startsWith('_'))
+  // filter out 'forbiddenProps'
+  .omit(['forbiddenProps'])
+  // add (or concatenate) each value to itself
+  .mapValues((v) => v + v)
+.value())
+class MyComponent extends React.Component {
+  ...
+}
+```
 
-#### Features
-
-- Sanely configured `gulpfile.js`, `package.json`, `.gitignore`, `.editorconfig`, `.eslintrc` and `.jsbeautifyrc`.
-- ES6 code from the `src` folder is transpiled into ES5 code in the `dist` folder via `babel`.
-- Both CommonJS and ES6 modules are supported.
-- Several modules and variables are automatically injected in each module at transpile time. Check (and edit) `__prelude.js`.
-- `__DEV__` and `__PROD__` are boolean constants reflecting `process.env.NODE_ENV`. Best friends with `envify` and `uglify`.
-- `__BROWSER__` and `__NODE__` are boolean constants trying hard to reflect whether the code runs in the browser (via browserify/webpack) or in a NodeJS env.
-- `bluebird` implementation of `Promise` is injected into global scope, since its is so neat and it outperforms native `Promise`.
-- `should` is injected into each module, so you can do development-time assertions that are skipped in production, eg. `if(__DEV__) { n.should.be.a.Number; }`.
-- `_` (`lodash`) is also injected into each module.
+When referencing `<MyComponent _private={true} forbiddenProps={null} foo={'bar'} />`, actually `<MyComponent foo={'barbar'} />` will be created.
 
 #### License
 
