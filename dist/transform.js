@@ -56,7 +56,7 @@ function transform(transformProps, displayName) {
         }
       }], [{
         key: 'displayName',
-        value: displayName || 'Transform' + Component.prototype.displayName,
+        value: displayName || 'Transform' + Component.displayName,
         enumerable: true
       }]);
 
