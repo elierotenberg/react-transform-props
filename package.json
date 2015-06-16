@@ -12,31 +12,27 @@
     "url": "https://github.com/elierotenberg/react-transform-props.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp test"
+  },
+  "devDependencies": {
+    "babel": "^5.5.8",
+    "babel-eslint": "^3.1.15",
+    "babel-runtime": "^5.5.8",
+    "eslint": "^0.23.0",
+    "eslint-plugin-react": "^2.5.2",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^0.14.0",
+    "gulp-mocha": "^2.1.1",
+    "gulp-plumber": "^1.0.1",
+    "react": "^0.13.3"
   },
   "dependencies": {
-    "babel": "^5.5.5",
-    "babel-runtime": "^5.5.5",
-    "bluebird": "^2.9.27",
+    "bluebird": "^2.9.30",
     "lodash": "^3.9.3",
     "pure-render-decorator": "^0.1.0",
     "should": "^6.0.3"
   },
   "peerDependencies": {
-    "react": "^0.13.3"
-  },
-  "devDependencies": {
-    "babel-eslint": "^3.1.14",
-    "del": "^1.2.0",
-    "eslint": "^0.22.1",
-    "eslint-plugin-react": "^2.5.0",
-    "gulp": "^3.9.0",
-    "gulp-babel": "^5.1.0",
-    "gulp-eslint": "^0.13.2",
-    "gulp-insert": "^0.4.0",
-    "gulp-plumber": "^1.0.1",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-util": "^3.0.5",
     "react": "^0.13.3"
   }
 }

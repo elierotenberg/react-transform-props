@@ -34,3 +34,7 @@ You probably don't need to use this decorator on your average widget component. 
 #### License
 
 MIT [Elie Rotenberg](http://elie.rotenberg.io) <[elie@rotenberg.io](mailto:elie@rotenberg.io)>
+
+#### Installation
+
+This module is written in ES6/7. You will need `babel` to run it.
