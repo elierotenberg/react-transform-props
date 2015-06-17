@@ -21,6 +21,7 @@ class MyComponent extends React.Component {
 }
 ```
 
+
 When referencing `<MyComponent _private={true} forbiddenProps={null} foo={'bar'} />`, actually `<MyComponent foo={'barbar'} />` will be created.
 
 ### But... why?
