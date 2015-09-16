@@ -29,7 +29,6 @@
   "dependencies": {
     "bluebird": "^2.9.30",
     "lodash": "^3.9.3",
-    "pure-render-decorator": "^0.1.0",
     "should": "^6.0.3"
   },
   "peerDependencies": {
